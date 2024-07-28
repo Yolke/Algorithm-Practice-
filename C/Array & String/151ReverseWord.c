@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
+//Reverse word
 
 void reverse(char* begin, char* end) {
     char temp;
