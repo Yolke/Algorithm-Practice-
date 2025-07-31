@@ -37,3 +37,22 @@ def intersect(l1, l2):
 
 print(intersect([1, 2, 2, 3], [2, 2, 3]))  # [2, 3]
 print(intersect([4, 5, 6], [1, 2]))        # []
+
+def max(nums:list):
+    x = nums[0]
+    for i in range(len(nums)):
+        if x < nums[i]:
+            x = nums[i]
+    return x
+
+def majority_element(nums: list[int]) -> int:
+    freq = {}
+    max = 0
+    index = 0
+    for num in  nums:
+        freq[num] = freq.get(num, 0) + 1  # initialise à 0 si la clé n'existe pas encore
+        if max < freq[num]:
+            max = freq[num]
+            index = num
+    return index
+print(majority_element([2,2,1,1,1,2,2]))  # ✅ 2
