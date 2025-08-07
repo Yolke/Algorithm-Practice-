@@ -13,5 +13,19 @@ def isPalindrome( s:str ) -> bool :
     return True
 
 
-x  = isPalindrome("TettheT")
-print(x)
+# x  = isPalindrome("TettheT")
+# print(x)
+
+
+
+x = 1122332211
+def isPalindromeInt(x:int) -> bool:
+    numStr = str(x)
+    size_divided = len(numStr)//2
+    for i in range(size_divided):
+        if numStr[i] != numStr[len(numStr)-i-1]:
+            return False
+    return True
+        
+
+print(isPalindromeInt(x))
