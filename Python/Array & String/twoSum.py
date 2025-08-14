@@ -16,4 +16,4 @@ def twoSumOpti(nums: list[int],target:int) -> list[int]: #hashmap solution O(N)
 
             
 
-print(twoSumOpti([2, 7, 11, 15], 9))  # ➞ [0, 1]
+print(twoSumOpti([2, 7, 11, 15], 27))  # ➞ [0, 1]
